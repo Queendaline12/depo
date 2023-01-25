@@ -1,0 +1,66 @@
+.container {
+  background-color: blue;
+}
+.container__box {
+  width: 300px;
+  height: 50px;
+  border: 3px solid black;
+  margin: 16px;
+  -webkit-animation: fadeinup ease-in-out;
+  animation: fadeinup ease-in-out;
+}
+
+.container :nth-child(1) {
+  background-color: red;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.container :nth-child(2) {
+  background-color: aqua;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+.container :nth-child(3) {
+  background-color: purple;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fadeinup {
+  0% {
+    transform: translate3d(0, 30px 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes fadeinup {
+  0% {
+    transform: translate3d(0, 30px 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.boxmove {
+  width: 100px;
+  background-color: black;
+  transition: transform 5s ease-in-out;
+}
+.boxmove:hover {
+  transform: translateX(400px);
+}
+
+.rotate {
+  width: 100px;
+  background-color: gold;
+}
+
+@-webkit-keyframes movedown {}
+@keyframes movedown {}/*# sourceMappingURL=main.css.map */
