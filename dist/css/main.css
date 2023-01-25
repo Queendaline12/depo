@@ -16,6 +16,12 @@
   animation-duration: 1s;
 }
 
+.new-commit {
+  width: 30px;
+  height: 30px;
+  background-color: pink;
+}
+
 .container :nth-child(2) {
   background-color: aqua;
   -webkit-animation-duration: 3s;
